@@ -7,6 +7,12 @@
   <script src="script.js"></script>
 </head>
 <body>
+  <input type="number" id="inputID" min="0" max="10" size="40" required></input>
+  <br>
+  <button onclick="handleFilter()">Filter</button>
+  <button onclick="completed()">Completed To-dos</button>
+  <button onclick="notCompleted()">Not Completed To-dos</button>
+  <br>
   <button onclick="fetchTodos()">Fetch To-dos</button>
   <button onclick="logTodos()">Log To-dos</button>
   <button onclick="populateTodos()">Populate To-dos</button>
