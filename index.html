@@ -7,9 +7,22 @@
   <script src="script.js"></script>
 </head>
 <body>
+  <center>
+  <br>
   <button onclick="fetchTodos()">Fetch To-dos</button>
   <button onclick="logTodos()">Log To-dos</button>
   <button onclick="populateTodos()">Populate To-dos</button>
+  <br><br>
+  <label>Filter by ID (1-10):</label>
+  <input type="number" id="inputID" min="0" max="10" style="width:50px" required></input>
+  <button onclick="handleFilter()">Filter</button>
+  <br><br>
+  <label>Filter again by completed or not completed to-dos:</label>
+  <br><br>
+  <button onclick="completed()">Completed To-dos</button>
+  <button onclick="notCompleted()">Not Completed To-dos</button>
+  <br>
+  </center>
   <ol id="todo-list">
   <!-- LIs will go here -->
   </ol>
